@@ -1,26 +1,27 @@
 #app {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 580px;
+  margin: 56px auto 32px;
+  padding: 0 24px;
 }
 
 #app > h1 {
   color: #996dff;
 }
 
-#app > img {
-  width: 64px;
-}
-
 #app > h2 {
   align-self: flex-start;
-  margin-top: 104px;
+  margin-top: 64px;
 }
 
 #app > p {
   align-self: flex-start;
   text-align: justify;
-  padding-top: 4px;
+  padding-top: 5px;
   width: 512px;
 }
 

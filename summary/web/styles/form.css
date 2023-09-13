@@ -1,12 +1,14 @@
 #form {
+  width: 100%;
   margin-top: 64px;
   display: flex;
+
   gap: 12px;
 }
 
 #form > input {
   height: 48px;
-  width: 450px;
+  width: 100%;
   border: none;
   color: #fff;
   background-color: #202024;
@@ -40,4 +42,26 @@
 #form > button i {
   font-size: 24px;
   color: #fff;
+}
+
+#form > button h2 {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  #form {
+    flex-direction: column;
+  }
+
+  #form > button {
+    width: 100%;
+  }
+
+  #form > button i {
+    display: none;
+  }
+
+  #form > button h2 {
+    display: inline;
+  }
 }
