@@ -14,16 +14,27 @@
     />
 
     <title>Shorts Summary</title>
+
+    <script>
+      function switchbutton() {
+        const html = document.documentElement
+        html.classList.toggle("light")
+      }
+    </script>
   </head>
   <body>
+    <div id="switch" onclick="switchbutton()">
+      <button></button>
+      <span></span>
+    </div>
     <div id="app">
       <img src="/logo.svg" alt="" />
       <h1 class="title-app">Shorts Summary</h1>
 
-      <form action="" id="form">
+      <form action="#" id="form">
         <input type="url" id="url" placeholder="URL do vídeo.." />
         <button title="Resumir">
-         <i class="ph ph-play"></i> 
+          <i class="ph ph-play"></i>
           <h2>Summary</h2>
         </button>
       </form>

@@ -3,19 +3,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   width: 100%;
   max-width: 580px;
   margin: 56px auto 32px;
+  margin: -60px auto 32px;
   padding: 0 24px;
 }
 
 #app > h1 {
-  color: #996dff;
+  /* color: #996dff; */
+  color: var(--main-color);
 }
 
 #app > h2 {
   align-self: flex-start;
   margin-top: 64px;
+  color: var(--text-color);
 }
 
 #app > p {

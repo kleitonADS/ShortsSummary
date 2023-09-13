@@ -1,3 +1,16 @@
+:root {
+  --text-color: #fff;
+  --text-color-summary: #fff;
+  --bg-body: #121214;
+  --main-color: #8257e5;
+  --bg-input: #202024;
+  --bg-input-error: #202024;
+  --bg-switch: #202024;
+  --highlight-color-hover: rgb(130 87 229 / 71%);
+  
+  --switch-url: url(/public/moon.svg);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,30 +19,84 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: #121214;
+  background-color: var(--bg-body);
   height: 100vh;
-  width: 100vw;
+  transition: background-color 0.2s;
 }
 
 body * {
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: var(--text-color);
 }
 
-/* body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #121214;
-  color: #fff;
-} */
+#switch {
+  position: relative;
+  width: 64px;
+  /* margin: 4px auto; */
+  margin: 20px;
+}
 
-/* body,
-button,
-input {
-  font-family: "Roboto", sans-serif;
-} */
+#switch button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--main-color) var(--switch-url) no-repeat center;
+  border: 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  animation: slide-back 0.2s;
+}
+
+#switch button:hover {
+  outline: 3px solid var(--highlight-color-hover);
+}
+
+#switch span {
+  display: block;
+  width: 50px;
+  height: 24px;
+  border-radius: 9999px;
+  /* border: 1px solid var(--stroke-color); */
+  background: var(--bg-switch);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.light {
+  --bg-body: #fff;
+  --text-color: #000000;
+  --main-color: #633bbc;
+  --bg-input: rgba(0, 0, 0, 0.1);
+  --bg-input-error: rgba(0, 0, 0, 0.1);
+  --bg-switch: rgba(0, 0, 0, 0.1);
+  --switch-url: url(/public/sun-dim.svg);
+}
+
+.light #switch button {
+  animation: slide-in 0.4s forwards;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 40%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 40%;
+  }
+
+  to {
+    left: 0;
+  }
+}
