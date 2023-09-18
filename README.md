@@ -6,7 +6,7 @@ O ShortsSummary é uma aplicação web que utiliza inteligência artificial para
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/preview.png" width="100%">
+  <img alt="projeto Shorts Summary" src="./preview.png" width="100%">
 </p>
 ## Aprendizados
 
@@ -24,8 +24,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Outras Bibliotecas
 Vite, Axios , Cors, ffmpeg
 
-## 💻 Como executar  o projeto
-
+## 💻 Como executar o projeto
 
 ```bash
 npm i
@@ -35,14 +34,6 @@ npn run web
 npm run server
 ```
 
-
-
-
-
-
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1282823495335498952). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-
-
